@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Programação</title>
+    <!-- Importando o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Importando o arquivo de scripts JavaScript com o atributo defer para garantir que o script seja executado após o carregamento da página -->
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- Título principal do quizz -->
+    <h1 id="main-title">Quizz de programação</h1>
+
+    <!-- Contêiner para exibir a pontuação do usuário, inicialmente oculto -->
+    <div id="score-container" class="hide">
+        <h2>Parabéns</h2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>Você acertou <span id="correct-answers">0</span> de <span id="questions-qty">10</span> perguntas</p>
+        <!-- Botão para reiniciar o quizz -->
+        <button id="restart">Refazer quizz!</button>
+    </div>
+
+    <!-- Contêiner principal do quizz -->
+    <div id="quizz-container">
+        <!-- Pergunta atual do quizz -->
+        <p id="question">
+            <span id="question-number">1</span> - <span id="question-text">Qual é a unidade de medida para metros?</span>
+        </p>
+        <!-- Contêiner para as opções de resposta -->
+        <div id="answers-box">
+            <!-- Botões para as opções de resposta -->
+            <button><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+            <button><span class="btn-letter">b</span> <span class="question-answer">km</span></button>
+            <button><span class="btn-letter">c</span> <span class="question-answer">ms</span></button>
+            <button><span class="btn-letter">d</span> <span class="question-answer">r</span></button>
+        </div>
+    </div>
+
+    <!-- Modelo para as respostas, inicialmente oculto -->
+    <button class="answer-template hide"><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+</body>
+
+</html>
